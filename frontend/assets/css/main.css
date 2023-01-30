@@ -1065,11 +1065,13 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
+.testimonials .testimonial-wrap:hover{
   padding-left: 10px;
 }
 
-.testimonials .testimonial-item {
+.testimonial.testimonial-item {
+
+
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 10px;
@@ -1077,15 +1079,18 @@ section {
   position: relative;
   background: #fff;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
+ 
   width: 90px;
   border-radius: 50px;
   margin-right: 15px;
 }
 
-.testimonials .testimonial-item h3 {
+.testimonials .testimonial-item h3 :hover{
+
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
@@ -1424,18 +1429,22 @@ section {
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
-.creatore .member {
+.creatore .member :hover{
+  margin-top: 70px;
   text-align: center;
   background: #fff;
   border-radius: 10px;
   padding: 15px;
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px 5px;
 }
 
 .creatore .member img {
   border-radius: 10px;
   overflow: hidden;
+  height: 300px;
 }
 
 .creatore .member .member-content {
@@ -1444,12 +1453,14 @@ section {
 
 .creatore .member h4 {
   font-weight: 700;
-  margin-top: 16px;
+  margin-top: 30px;
   margin-bottom: 2px;
   font-size: 20px;
+  text-align: center;
 }
 
 .creatore .member span {
+  text-align: center;
   font-style: italic;
   display: block;
   font-size: 14px;
@@ -1995,7 +2006,7 @@ section {
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .hero .btn-watch-video:hover i {
@@ -2013,50 +2024,60 @@ section {
   }
 }
 
-.hero .icon-boxes {
-  padding-bottom: 60px;
-}
 
-@media (min-width: 1200px) {
+
+
+@media (min-width: 500px) {
+
+
   .hero .icon-boxes:before {
     content: "";
     position: absolute;
     bottom: 0;
+  
     left: 0;
     right: 0;
-    height: calc(50% + 20px);
+    /* height: calc(50% + 20px); */
     background-color: #fff;
+    
   }
 }
 
+
+
 .hero .icon-box {
-  padding: 60px 30px;
-  position: relative;
+
+  padding: 20px 30px;
+  margin-top:0px;
+  margin-bottom: 130px;
   overflow: hidden;
   background: #e1d5e1;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+  height: 70%;
+  width: 70%;
+ 
 }
 
+
 .hero .icon-box .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family:ubuntu;
+  font-size: 20px;
+ text-align:center;
 }
 
 .hero .icon-box .title a {
-  color: #fff;
+  color: rgb(128, 64, 64);
   transition: 0.3s;
 }
 
 .hero .icon-box .icon {
-  margin-bottom: 20px;
-  padding-top: 10px;
+ 
   display: inline-block;
   transition: all 0.3s ease-in-out;
   font-size: 48px;
@@ -2077,6 +2098,57 @@ section {
 .hero .icon-box:hover .icon {
   color: #fff;
 }
+   /* For Icon-Boxx */
+   .hero .icon-boxx{
+  
+    padding: 60px 95px;
+    margin-top:0px;
+    
+    overflow: hidden;
+    background: #e1d5e1;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 80%;
+    width: 80%;
+  }
+  .hero .icon-boxx .title {
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family:ubuntu;
+    font-size: 20px;
+   text-align:center;
+  }
+  
+  .hero .icon-boxx .title a {
+    color: rgb(66, 58, 60);
+    transition: 0.3s;
+  }
+  
+  .hero .icon-boxx .icon {
+   
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .hero .icon-boxx:hover {
+    background: #7FB3D5;
+  }
+  .hero .icon-boxx.icon.img-fluid{
+    width: 100%;
+    height: 100%;
+  
+  
+  }
+  .hero .icon-boxx:hover .title a,
+  .hero .icon-boxx:hover .icon {
+    color: #fff;
+  }
 
 /*--------------------------------------------------------------
 # Blog
